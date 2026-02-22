@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendário de Atividades 2026 - Quórum Ala Prazeres</title>
+
+    <style>
+      :root {
+        --primary: #0f2d4a;
+        --accent: #2e86de;
+        --bg: #eef3f9;
+        --card: #ffffff;
+        --text: #2c3e50;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", system-ui, sans-serif;
+        background: var(--bg);
+        padding: 30px;
+        color: var(--text);
+      }
+
+      /* HEADER */
+
+      header {
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(135deg, var(--primary), var(--accent));
+        color: white;
+        border-radius: 20px;
+        margin-bottom: 50px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.8rem;
+      }
+
+      header p {
+        opacity: 0.9;
+        margin-top: 10px;
+        font-size: 1.2rem;
+      }
+
+      /* GRID */
+
+      .container {
+        max-width: 1300px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+      }
+
+      /* CARD DO MÊS */
+
+      .month-card {
+        background: var(--card);
+        border-radius: 18px;
+        padding: 30px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s ease;
+      }
+
+      .month-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .month-name {
+        font-size: 2rem;
+        color: var(--primary);
+        margin-bottom: 25px;
+        position: relative;
+      }
+
+      .month-name::after {
+        content: "";
+        width: 60px;
+        height: 4px;
+        background: var(--accent);
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        border-radius: 4px;
+      }
+
+      /* EVENTO */
+
+      .event {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 25px;
+        align-items: center;
+      }
+
+      /* BLOCO DA DATA ESTILO CALENDÁRIO */
+
+      .date-box {
+        min-width: 65px;
+        text-align: center;
+        background: var(--primary);
+        color: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .date-day {
+        font-size: 1.4rem;
+        font-weight: bold;
+        padding: 8px 0;
+      }
+
+      .date-month {
+        background: var(--accent);
+        font-size: 0.75rem;
+        padding: 4px 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      /* INFO EVENTO */
+
+      .event-info h3 {
+        margin: 0;
+        font-size: 1.05rem;
+      }
+
+      .tag {
+        margin-top: 5px;
+        display: inline-block;
+        font-size: 0.7rem;
+        padding: 4px 10px;
+        border-radius: 20px;
+        background: #eaf4ff;
+        color: var(--accent);
+        font-weight: bold;
+      }
+
+      /* FOOTER */
+
+      footer {
+        text-align: center;
+        margin-top: 60px;
+        color: #777;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Cronograma 2026</h1>
+      <p>Quórum Ala Prazeres</p>
+    </header>
+
+    <div class="container">
+      <!-- MARÇO -->
+      <div class="month-card">
+        <div class="month-name">Março</div>
+
+        <div class="event">
+          <div class="date-box">
+            <div class="date-day">14</div>
+            <div class="date-month">MAR</div>
+          </div>
+          <div class="event-info">
+            <h3>Torneio de Futsal Solidário</h3>
+            <div class="tag">Quórum Ala Prazeres</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAIO -->
+      <div class="month-card">
+        <div class="month-name">Maio</div>
+
+        <div class="event">
+          <div class="date-box">
+            <div class="date-day">12</div>
+            <div class="date-month">MAI</div>
+          </div>
+          <div class="event-info">
+            <h3>Dia do Homem Propriedade</h3>
+            <div class="tag">Mundial</div>
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="date-box">
+            <div class="date-day">23</div>
+            <div class="date-month">MAI</div>
+          </div>
+          <div class="event-info">
+            <h3>Atividade Dons Culinários</h3>
+            <div class="tag">Quórum Ala Prazeres</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OUTUBRO -->
+      <div class="month-card">
+        <div class="month-name">Outubro</div>
+
+        <div class="event">
+          <div class="date-box">
+            <div class="date-day">06</div>
+            <div class="date-month">OUT</div>
+          </div>
+          <div class="event-info">
+            <h3>Ciclismo Andando com Cristo</h3>
+            <div class="tag">Quórum Ala Prazeres</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>© 2026 Secretário Arthur Lopes</footer>
+  </body>
+</html>

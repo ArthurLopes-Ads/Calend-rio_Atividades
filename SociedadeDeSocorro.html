@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Calendário de Atividades 2026 - Sociedade de Socorro Ala Prazeres
+    </title>
+
+    <style>
+      :root {
+        --primary: #1a3a5a;
+        --accent: #3498db;
+        --bg: #f0f4f8;
+        --card: #ffffff;
+        --text: #2c3e50;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", system-ui, sans-serif;
+        background: var(--bg);
+        padding: 30px;
+        color: var(--text);
+      }
+
+      header {
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(135deg, var(--primary), var(--accent));
+        color: white;
+        border-radius: 20px;
+        margin-bottom: 50px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+
+      header p {
+        margin-top: 10px;
+        opacity: 0.9;
+        font-size: 1.1rem;
+      }
+
+      .container {
+        max-width: 1300px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+      }
+
+      .month-card {
+        background: var(--card);
+        border-radius: 18px;
+        padding: 30px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+        transition: 0.3s ease;
+      }
+
+      .month-card:hover {
+        transform: translateY(-8px);
+      }
+
+      .month-name {
+        font-size: 1.8rem;
+        color: var(--primary);
+        margin-bottom: 25px;
+        position: relative;
+      }
+
+      .month-name::after {
+        content: "";
+        width: 60px;
+        height: 4px;
+        background: var(--accent);
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        border-radius: 4px;
+      }
+
+      .event {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 25px;
+        align-items: center;
+      }
+
+      .date-box {
+        min-width: 65px;
+        text-align: center;
+        background: var(--primary);
+        color: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .date-day {
+        font-size: 1.4rem;
+        font-weight: bold;
+        padding: 8px 0;
+      }
+
+      .date-month {
+        background: var(--accent);
+        font-size: 0.75rem;
+        padding: 4px 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .event-info h3 {
+        margin: 0;
+        font-size: 1rem;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 60px;
+        color: #777;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Cronograma de Atividades da Sociedade de Socorro 2026</h1>
+      <p>Ala Prazeres - Planejamento Integrado</p>
+    </header>
+
+    <div class="container">
+      <!-- ABRIL -->
+      <div class="month-card">
+        <div class="month-name">Abril</div>
+
+        <div class="event">
+          <div class="date-box">
+            <div class="date-day">25</div>
+            <div class="date-month">ABR</div>
+          </div>
+          <div class="event-info">
+            <h3>Troca de Talentos</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- JULHO -->
+      <div class="month-card">
+        <div class="month-name">Julho</div>
+
+        <div class="event">
+          <div class="date-box">
+            <div class="date-day">18</div>
+            <div class="date-month">JUL</div>
+          </div>
+          <div class="event-info">
+            <h3>Armazenamento</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- SETEMBRO -->
+      <div class="month-card">
+        <div class="month-name">Setembro</div>
+
+        <div class="event">
+          <div class="date-box">
+            <div class="date-day">19</div>
+            <div class="date-month">SET</div>
+          </div>
+          <div class="event-info">
+            <h3>Segundo Treinamento de Ministração</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- NOVEMBRO -->
+      <div class="month-card">
+        <div class="month-name">Novembro</div>
+
+        <div class="event">
+          <div class="date-box">
+            <div class="date-day">11</div>
+            <div class="date-month">NOV</div>
+          </div>
+          <div class="event-info">
+            <h3>Oficina de Natal</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>© 2026 Secretário Arthur Lopes</footer>
+  </body>
+</html>
